@@ -214,15 +214,17 @@
 
         /* Code-like elements */
         .code-block {
-            background-color: var(--dark-bg);
-            color: #f8f9fa;
-            padding: 15px;
-            border-radius: 5px;
-            font-family: 'Courier New', Courier, monospace;
-            margin: 20px 0;
-            position: relative;
-            overflow: hidden;
+          background-color: var(--dark-bg);
+          color: #f8f9fa;
+          font-family: 'Courier New', monospace;
+          font-size: 0.9rem;
+          line-height: 1.4;
+          padding: 1rem;
+          border-radius: 0.5rem;
+          overflow-x: auto;
+          margin-bottom: 2rem;
         }
+
 
         .code-block::before {
             content: "// Skills & Tools";
@@ -282,17 +284,16 @@
 
         <!-- Skills -->
         <section class="section">
-            <h2 class="section-title"><i class="fas fa-code"></i> Skills & Tools</h2>
-            
-            <div class="code-block">
-                <span class="code-line"><span class="code-keyword">const</span> <span class="code-function">skills</span> = {</span>
-                <span class="code-line">  <span class="code-string">productSkills</span>: [<span class="code-string">'Product Strategy'</span>, <span class="code-string">'Product Architecture'</span>, <span class="code-string">'Business Process Management'</span>, <span class="code-string">'CJM'</span>],</span>
-                <span class="code-line">  <span class="code-string">dataSkills</span>: [<span class="code-string">'Funnel Analysis'</span>, <span class="code-string">'A/B Testing'</span>, <span class="code-string">'Predictive Modeling'</span>, <span class="code-string">'NLP & LLM'</span>],</span>
-                <span class="code-line">  <span class="code-string">tools</span>: [<span class="code-string">'Jira'</span>, <span class="code-string">'PostgreSQL'</span>, <span class="code-string">'Firebase'</span>, <span class="code-string">'GA4'</span>, <span class="code-string">'Tableau'</span>, <span class="code-string">'Postman'</span>],</span>
-                <span class="code-line">  <span class="code-string">stack</span>: [<span class="code-string">'SQL'</span>, <span class="code-string">'Python'</span>, <span class="code-string">'Pandas'</span>, <span class="code-string">'NumPy'</span>, <span class="code-string">'TensorFlow'</span>],</span>
-                <span class="code-line">  <span class="code-string">methodologies</span>: [<span class="code-string">'Scrum'</span>, <span class="code-string">'Kanban'</span>, <span class="code-string">'Waterfall'</span>]</span>
-                <span class="code-line">};</span>
-            </div>
+          <h2 class="section-title"><i class="fas fa-code"></i> Skills &amp; Tools</h2>
+          <pre class="code-block"><code>
+        const skills = {
+          productSkills: ['Product Strategy', 'Product Architecture', 'BPM', 'CJM'],
+          dataSkills:    ['Funnel Analysis', 'A/B Testing', 'Predictive Modeling', 'NLP & LLM'],
+          tools:         ['Jira', 'PostgreSQL', 'Firebase', 'GA4', 'Tableau', 'Postman'],
+          stack:         ['SQL', 'Python', 'Pandas', 'NumPy', 'TensorFlow'],
+          methodologies: ['Scrum', 'Kanban', 'Waterfall']
+        };
+          </code></pre>
         </section>
 
         <!-- Experience -->
