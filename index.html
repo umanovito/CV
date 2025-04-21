@@ -1,132 +1,369 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vitalii Iushmanov</title>
-  <!-- Подключаем внешний CSS -->
-  <link rel="stylesheet" href="style.css" />
-  <!-- FontAwesome для иконок (замените KIT_ID на ваш) -->
-  <script src="https://kit.fontawesome.com/YOUR_KIT_ID.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vito Umano - Resume</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <div class="container">
     <!-- Header -->
-    <header class="section header">
-      <h1 class="name">Vitalii Iushmanov</h1>
-      <p class="tagline">Software product development manager</p>
+    <header class="header">
+        <div id="particles-js"></div>
+        <div class="container header-content">
+            <h1 class="name">Vito Umano</h1>
+            <p class="title">Data Science & Product Development Manager</p>
+            <div class="contact">
+                <a href="mailto:umanovito@gmail.com"><i class="fas fa-envelope"></i> umanovito@gmail.com</a>
+                <a href="tel:+77059673579"><i class="fas fa-phone"></i> +7(705)967 35 79</a>
+            </div>
+        </div>
     </header>
 
-    <!-- Professional Summary -->
-    <section id="summary" class="section">
-      <h2 class="section-title"><i class="fas fa-user"></i> Professional Summary</h2>
-      <p class="summary-text">
-        Software product development manager with <span class="highlight">10+ years</span> of experience in IT.
-        Built data management systems that informed key product decisions and contributed to a
-        <span class="highlight">30% conversion increase</span> in the mobile app. Hired and managed a team,
-        organized workflows, and developed an HR document management system TechHR (SaaS). Developed a BPM
-        system for the project finance process, which reduced the processing time of the lending process by
-        <span class="highlight">10×</span>. Launched and maintained banks' co‑brand products (debit & credit cards)
-        used by over <span class="highlight">500 000</span> customers.
-      </p>
-    </section>
+    <!-- Main content -->
+    <div class="main-content container">
+        <!-- Professional Summary -->
+        <section class="section">
+            <h2 class="section-title"><i class="fas fa-user-tie"></i> Professional Summary</h2>
+            <p>Software product development manager with <span class="highlight">10 years</span> of experience in IT. Built data management systems that informed key product decisions and contributed to a <span class="highlight">30% conversion increase</span> in the mobile app. Hired and managed a team, organized workflows, and developed an HR document management system TechHR (SaaS). Developed a BPM system for the project finance process, which reduced the processing time of the lending process by <span class="highlight">10 times</span>. Launched and maintained banks' co-brand products (debit&credit cards) used by over <span class="highlight">500,000 customers</span>.</p>
+        </section>
 
-    <!-- Skills & Tools -->
-    <section id="skills-tools" class="section">
-      <h2 class="section-title"><i class="fas fa-code"></i> Skills &amp; Tools</h2>
-      <div class="skills-grid">
-        <div class="skill-card">
-          <h3>Product</h3>
-          <ul>
-            <li>Product Strategy</li>
-            <li>Product Architecture</li>
-            <li>Business Process Management</li>
-            <li>CJM</li>
-          </ul>
-        </div>
-        <div class="skill-card">
-          <h3>Data</h3>
-          <ul>
-            <li>Funnel Analysis</li>
-            <li>A/B Testing</li>
-            <li>Predictive Modeling</li>
-            <li>NLP &amp; LLM</li>
-          </ul>
-        </div>
-        <div class="skill-card">
-          <h3>Tools</h3>
-          <ul>
-            <li>Jira</li>
-            <li>PostgreSQL</li>
-            <li>Firebase</li>
-            <li>GA4</li>
-            <li>Tableau</li>
-            <li>Postman</li>
-          </ul>
-        </div>
-        <div class="skill-card">
-          <h3>Stack</h3>
-          <ul>
-            <li>SQL</li>
-            <li>Python</li>
-            <li>Pandas</li>
-            <li>NumPy</li>
-            <li>TensorFlow</li>
-          </ul>
-        </div>
-        <div class="skill-card">
-          <h3>Methodologies</h3>
-          <ul>
-            <li>Scrum</li>
-            <li>Kanban</li>
-            <li>Waterfall</li>
-          </ul>
-        </div>
-      </div>
-    </section>
+        <!-- Skills -->
+        <section class="section">
+            <h2 class="section-title"><i class="fas fa-code"></i> Skills & Tools</h2>
+            
+            <div class="code-block">
+                <span class="code-line"><span class="code-keyword">const</span> <span class="code-function">skills</span> = {</span>
+                <span class="code-line">  <span class="code-string">productSkills</span>: [<span class="code-string">'Product Strategy'</span>, <span class="code-string">'Product Architecture'</span>, <span class="code-string">'Business Process Management'</span>, <span class="code-string">'CJM'</span>],</span>
+                <span class="code-line">  <span class="code-string">dataSkills</span>: [<span class="code-string">'Funnel Analysis'</span>, <span class="code-string">'A/B Testing'</span>, <span class="code-string">'Predictive Modeling'</span>, <span class="code-string">'NLP & LLM'</span>],</span>
+                <span class="code-line">  <span class="code-string">tools</span>: [<span class="code-string">'Jira'</span>, <span class="code-string">'PostgreSQL'</span>, <span class="code-string">'Firebase'</span>, <span class="code-string">'GA4'</span>, <span class="code-string">'Tableau'</span>, <span class="code-string">'Postman'</span>],</span>
+                <span class="code-line">  <span class="code-string">stack</span>: [<span class="code-string">'SQL'</span>, <span class="code-string">'Python'</span>, <span class="code-string">'Pandas'</span>, <span class="code-string">'NumPy'</span>, <span class="code-string">'TensorFlow'</span>],</span>
+                <span class="code-line">  <span class="code-string">methodologies</span>: [<span class="code-string">'Scrum'</span>, <span class="code-string">'Kanban'</span>, <span class="code-string">'Waterfall'</span>]</span>
+                <span class="code-line">};</span>
+            </div>
+        </section>
 
-    <!-- Work Experience -->
-    <section id="experience" class="section">
-      <h2 class="section-title"><i class="fas fa-briefcase"></i> Work Experience</h2>
+        <!-- Experience -->
+        <section class="section">
+            <h2 class="section-title"><i class="fas fa-briefcase"></i> Work Experience</h2>
+            
+            <div class="experience-item">
+                <div class="job-header">
+                    <h3 class="job-title">Lead Product Analyst</h3>
+                    <span class="date">12/2022 - 12/2024</span>
+                </div>
+                <div class="company">HT.KZ, Almaty, Kazakhstan</div>
+                <div class="company-description">TOP-1 tour agent in Kazakhstan</div>
+                <ul class="responsibilities">
+                    <li>Increased mobile app sales conversion by <strong>30%</strong> through funnel analysis, identifying bottlenecks and testing hypotheses on historical data</li>
+                    <li>Designed, launched, and analyzed <strong>~30 A/B tests</strong> to optimize user experience and conversion</li>
+                    <li>Implemented <strong>scalable data management processes</strong>, including annotation pipelines and dashboarding</li>
+                    <li>Conducted <strong>~50 ad-hoc analyses</strong> to support product and marketing decision-making</li>
+                    <li>Mapped user journeys (<strong>clickstream-based graphs</strong>) to identify improvement opportunities</li>
+                    <li>Built a <strong>predictive model</strong> for purchase probability based on user behavior</li>
+                    <li>Developed an <strong>NLP system</strong> to classify customer messages by sentiment and request type using fine-tuned BERT</li>
+                    <li>Built and integrated a <strong>voice message transcription system</strong> using OpenAI Whisper, enabling automatic processing within CRM workflows</li>
+                </ul>
+            </div>
+            
+            <div class="experience-item">
+                <div class="job-header">
+                    <h3 class="job-title">Product Analyst (CJM project)</h3>
+                    <span class="date">06/2022 - 11/2022</span>
+                </div>
+                <div class="company">DDL, Belgrade, Serbia</div>
+                <div class="company-description">A product consulting boutique</div>
+                <ul class="responsibilities">
+                    <li>Conducted <strong>cross-platform funnel analysis</strong> to evaluate user behavior and optimize conversion across mobile and web</li>
+                    <li>Mapped the <strong>user journey</strong> and identified bottlenecks, highlighting friction points and UX improvement areas</li>
+                    <li>Generated and validated <strong>data-driven product hypotheses</strong> to support feature development and UX decisions</li>
+                </ul>
+            </div>
+            
+            <div class="experience-item">
+                <div class="job-header">
+                    <h3 class="job-title">Founder</h3>
+                    <span class="date">07/2021 - 03/2022</span>
+                </div>
+                <div class="company">TechHR, Moscow, Russia</div>
+                <div class="company-description">An HR document management system for SMBs</div>
+                <ul class="responsibilities">
+                    <li>Discovered a <strong>growing market opportunity</strong> in HR automation for SMBs through user and competitor research</li>
+                    <li>Created the <strong>product strategy and roadmap</strong>; recruited and led a <strong>cross-functional team of 7</strong> (backend, frontend, design)</li>
+                    <li>Delivered the <strong>MVP in under 4 months</strong> and launched early user testing with positive initial feedback</li>
+                    <li>Project was discontinued at the early go-to-market stage due to geopolitical disruptions</li>
+                </ul>
+            </div>
+            
+            <div class="experience-item">
+                <div class="job-header">
+                    <h3 class="job-title">Product management consultant</h3>
+                    <span class="date">11/2020 - 06/2021</span>
+                </div>
+                <div class="company">RoomBooking, Barnaul, Russia</div>
+                <div class="company-description">A property management application for hotels/landlords/hosts (<strong>10k+ installs</strong>)</div>
+                <ul class="responsibilities">
+                    <li>Advised the team on <strong>product growth and monetization strategy</strong></li>
+                    <li>Designed <strong>unit economics</strong> and implemented a <strong>subscription-based business model</strong></li>
+                    <li>Created a <strong>product roadmap</strong> and helped improve user engagement and retention</li>
+                </ul>
+            </div>
+            
+            <div class="experience-item">
+                <div class="job-header">
+                    <h3 class="job-title">Lead Business Analyst</h3>
+                    <span class="date">10/2019 - 10/2020</span>
+                </div>
+                <div class="company">Bank Dom.rf, Moscow, Russia</div>
+                <div class="company-description">TOP-3 bank in mortgage and project financing in Russia</div>
+                <ul class="responsibilities">
+                    <li>Led the <strong>digital transformation</strong> of the project financing process, increasing application processing speed by <strong>3×</strong></li>
+                    <li><strong>Standardized and digitized</strong> the loan application process for construction companies</li>
+                    <li><strong>Automated financial reporting</strong> workflows and integrated a chat feature into the application broker</li>
+                    <li>Developed <strong>integrations</strong> between the broker and internal systems (scoring, CRM, databases), as well as external government APIs</li>
+                    <li>Built an <strong>automated monitoring system</strong> that cut the time needed to supervise each project by <strong>70%</strong></li>
+                    <li>Built a system to <strong>collect and process data from webcams</strong> on construction sites</li>
+                    <li>Implemented <strong>red flag detection</strong> based on deviations from construction schedules, financial data, and photo analysis</li>
+                </ul>
+            </div>
+            
+            <div class="experience-item">
+                <div class="job-header">
+                    <h3 class="job-title">Product Owner</h3>
+                    <span class="date">04/2019 - 09/2019</span>
+                </div>
+                <div class="company">T1 Consulting (T1 group), Moscow, Russia</div>
+                <div class="company-description">TOP-10 Russian IT company specializes in product development and digital platform engineering</div>
+                <ul class="responsibilities">
+                    <li>Initiated and led the development of an <strong>internal MVP</strong>: a performance monitoring system for IT infrastructure and employee activity tracking</li>
+                    <li>Defined <strong>core product features</strong>, created the strategy and roadmap, and secured stakeholder alignment</li>
+                    <li>Managed a <strong>cross-functional team of 15</strong> (developers, QA, designer, analyst)</li>
+                    <li>Supervised <strong>product design, architecture, backlog grooming</strong>, and delivery planning</li>
+                    <li>Conducted a <strong>pre-sale demo</strong> for one of the largest logistics companies in Russia</li>
+                    <li>Delivered a <strong>fully functional MVP</strong> and prepared it for pilot implementation</li>
+                </ul>
+            </div>
+            
+            <div class="experience-item">
+                <div class="job-header">
+                    <h3 class="job-title">Business analyst</h3>
+                    <span class="date">04/2017 - 09/2018</span>
+                </div>
+                <div class="company">Tinkoff Bank, Moscow, Russia</div>
+                <div class="company-description">TOP-3 largest bank in Russia, an online ecosystem of financial and lifestyle services for over <strong>40 million clients</strong></div>
+                <ul class="responsibilities">
+                    <li>Designed and launched a <strong>new in-person credit card distribution process</strong> in malls and stores → Increased conversion to first purchase by <strong>30%</strong>, reduced time to receive a card from <strong>1 day to 20 minutes</strong></li>
+                    <li>Managed <strong>10+ co-branded card products</strong>, attracting over <strong>500,000 active customers</strong></li>
+                </ul>
+            </div>
+            
+            <div class="experience-item">
+                <div class="job-header">
+                    <h3 class="job-title">BI Consultant</h3>
+                    <span class="date">12/2015 - 10/2016</span>
+                </div>
+                <div class="company">GMSC, Moscow, Russia</div>
+                <div class="company-description">An IT company specializes in business applications implementation and software development</div>
+                <ul class="responsibilities">
+                    <li>Implemented <strong>budgeting systems</strong> for X5 Retail Group and Ammoni plant using IBM Cognos</li>
+                    <li>Developed a revenue forecasting model with <strong>98% accuracy</strong>, improving financial planning reliability</li>
+                </ul>
+            </div>
+        </section>
 
-      <div class="job-item">
-        <div class="job-header">
-          <div class="job-info">
-            <h3>Product Analyst (CJM project)</h3>
-            <p class="job-company">DDL, Belgrade, Serbia</p>
-          </div>
-          <span class="job-date">06/2022 – 11/2022</span>
+        <!-- Education -->
+        <section class="section">
+            <h2 class="section-title"><i class="fas fa-graduation-cap"></i> Education</h2>
+            <div class="education-item">
+                <div class="job-header">
+                    <h3 class="job-title">BS&MS, Applied Math and Physics</h3>
+                    <span class="date">09/2008 - 08/2014</span>
+                </div>
+                <div class="school">Moscow Institute of Physics and Technology, Moscow, Russia</div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Vito Umano. All rights reserved.</p>
         </div>
-        <ul class="job-details">
-          <li>Conducted cross-platform funnel analysis to evaluate user behavior and optimize conversion across mobile and web.</li>
-          <li>Mapped the user journey and identified bottlenecks, highlighting friction points and UX improvement areas.</li>
-          <li>Generated and validated data-driven product hypotheses to support feature development and UX decisions.</li>
-        </ul>
-      </div>
-
-      <div class="job-item">
-        <div class="job-header">
-          <div class="job-info">
-            <h3>Founder</h3>
-            <p class="job-company">TechHR, Moscow, Russia</p>
-          </div>
-          <span class="job-date">07/2021 – 03/2022</span>
-        </div>
-        <ul class="job-details">
-          <li>Discovered a growing market opportunity in HR automation for SMBs through user and competitor research.</li>
-          <li>Created the product strategy and roadmap; recruited and led a cross-functional team of 7 (backend, frontend, design).</li>
-          <li>Delivered the MVP in under 4 months and launched early user testing with positive initial feedback.</li>
-          <li>Project was discontinued at the early go-to-market stage due to geopolitical disruptions.</li>
-        </ul>
-      </div>
-
-      <!-- … остальные позиции … -->
-    </section>
-
-    <!-- Footer / Contacts -->
-    <footer class="section footer">
-      <!-- Ваши контакты, ссылки и т.д. -->
     </footer>
-  </div>
+
+    <!-- Protein Modal -->
+    <div id="proteinModal" class="protein-modal">
+        <div class="protein-modal-content">
+            <h3>Уведомление</h3>
+            <p>Чтобы продолжить работу с админкой необходимо занести банку протеина к Вито</p>
+            <div class="protein-buttons">
+                <a href="https://ge.iherb.com/pr/optimum-nutrition-gold-standard-100-whey-double-rich-chocolate-5-lbs-2-27-kg/27509" target="_blank" class="protein-btn protein-yes">Да</a>
+                <button class="protein-btn protein-no">Нет</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Gif Modal -->
+    <div id="gifModal" class="gif-modal">
+        <div class="gif-content">
+            <img src="YOUR_GIF_URL_HERE" alt="Reaction GIF">
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        // Initialize particles.js
+        document.addEventListener('DOMContentLoaded', function() {
+            particlesJS('particles-js', {
+                "particles": {
+                    "number": {
+                        "value": 80,
+                        "density": {
+                            "enable": true,
+                            "value_area": 800
+                        }
+                    },
+                    "color": {
+                        "value": "#ffffff"
+                    },
+                    "shape": {
+                        "type": "circle",
+                        "stroke": {
+                            "width": 0,
+                            "color": "#000000"
+                        },
+                        "polygon": {
+                            "nb_sides": 5
+                        }
+                    },
+                    "opacity": {
+                        "value": 0.5,
+                        "random": false,
+                        "anim": {
+                            "enable": false,
+                            "speed": 1,
+                            "opacity_min": 0.1,
+                            "sync": false
+                        }
+                    },
+                    "size": {
+                        "value": 3,
+                        "random": true,
+                        "anim": {
+                            "enable": false,
+                            "speed": 40,
+                            "size_min": 0.1,
+                            "sync": false
+                        }
+                    },
+                    "line_linked": {
+                        "enable": true,
+                        "distance": 150,
+                        "color": "#ffffff",
+                        "opacity": 0.4,
+                        "width": 1
+                    },
+                    "move": {
+                        "enable": true,
+                        "speed": 2,
+                        "direction": "none",
+                        "random": false,
+                        "straight": false,
+                        "out_mode": "out",
+                        "bounce": false,
+                        "attract": {
+                            "enable": false,
+                            "rotateX": 600,
+                            "rotateY": 1200
+                        }
+                    }
+                },
+                "interactivity": {
+                    "detect_on": "canvas",
+                    "events": {
+                        "onhover": {
+                            "enable": true,
+                            "mode": "grab"
+                        },
+                        "onclick": {
+                            "enable": true,
+                            "mode": "push"
+                        },
+                        "resize": true
+                    },
+                    "modes": {
+                        "grab": {
+                            "distance": 140,
+                            "line_linked": {
+                                "opacity": 1
+                            }
+                        },
+                        "bubble": {
+                            "distance": 400,
+                            "size": 40,
+                            "duration": 2,
+                            "opacity": 8,
+                            "speed": 3
+                        },
+                        "repulse": {
+                            "distance": 200,
+                            "duration": 0.4
+                        },
+                        "push": {
+                            "particles_nb": 4
+                        },
+                        "remove": {
+                            "particles_nb": 2
+                        }
+                    }
+                },
+                "retina_detect": true
+            });
+        });
+
+        // Protein Modal Functionality
+        // Track quiz count in localStorage
+        let quizCount = localStorage.getItem('quizCount') ? parseInt(localStorage.getItem('quizCount')) : 0;
+        
+        // Function to simulate creating a quiz
+        function createQuiz() {
+            quizCount++;
+            localStorage.setItem('quizCount', quizCount);
+            
+            // Check if we've reached 30 quizzes
+            if (quizCount === 30) {
+                document.getElementById('proteinModal').style.display = 'flex';
+            }
+        }
+        
+        // For demo purposes, add a button to simulate creating quizzes
+        const createQuizBtn = document.createElement('button');
+        createQuizBtn.textContent = 'Симулировать создание квиза';
+        createQuizBtn.style.position = 'fixed';
+        createQuizBtn.style.bottom = '20px';
+        createQuizBtn.style.right = '20px';
+        createQuizBtn.style.zIndex = '1000';
+        createQuizBtn.style.padding = '10px';
+        createQuizBtn.style.backgroundColor = '#2196F3';
+        createQuizBtn.style.color = 'white';
+        createQuizBtn.style.border = 'none';
+        createQuizBtn.style.borderRadius = '5px';
+        createQuizBtn.style.cursor = 'pointer';
+        createQuizBtn.onclick = createQuiz;
+        document.body.appendChild(createQuizBtn);
+        
+        // Show protein modal immediately for testing
+        document.querySelector('.protein-no').addEventListener('click', function() {
+            document.getElementById('proteinModal').style.display = 'none';
+            document.getElementById('gifModal').style.display = 'flex';
+        });
+        
+        // Close gif modal when clicking anywhere
+        document.getElementById('gifModal').addEventListener('click', function() {
+            this.style.display = 'none';
+        });
+    </script>
 </body>
 </html>
