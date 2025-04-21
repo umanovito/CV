@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vito Umano - Resume</title>
+    <title>Vito Umano - CV</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
@@ -277,41 +277,93 @@
     <!-- Main content -->
     <div class="main-content container animated">
         <!-- Professional Summary -->
-        <section class="section">
-            <h2 class="section-title"><i class="fas fa-user-tie"></i> Professional Summary</h2>
-            <p>Software product development manager with 10 years of experience in IT. Built data management systems that informed key product decisions and contributed to a <span class="metric">30% conversion increase</span> in the mobile app. Hired and managed a team, organized workflows, and developed an HR document management system TechHR (SaaS). Developed a BPM system for the project finance process, which reduced the processing time of the lending process by <span class="metric">10 times</span>. Launched and maintained banks' co-brand products (debit&credit cards) used by over <span class="metric">500,000 customers</span>.</p>
+        <section id="summary" class="section">
+          <h2 class="section-title"><i class="fas fa-user"></i> Professional Summary</h2>
+          <p class="summary-text">
+            Software product development manager with <span class="highlight">10+ years</span> of experience in IT.
+            Built data management systems that informed key product decisions and contributed to a
+            <span class="highlight">30% conversion increase</span> in the mobile app. Hired and managed a team,
+            organized workflows, and developed an HR document management system TechHR (SaaS). Developed a
+            BPM system for the project finance process, which reduced the processing time of the lending process by
+            <span class="highlight">10×</span>. Launched and maintained banks' co‑brand products (debit & credit cards)
+            used by over <span class="highlight">500 000</span> customers.
+          </p>
         </section>
 
+
         <!-- Skills -->
-        <section class="section">
+        <section id="skills-tools" class="section">
           <h2 class="section-title"><i class="fas fa-code"></i> Skills &amp; Tools</h2>
-          <pre class="code-block"><code>
-        const skills = {
-          product_skills: ['Product Strategy', 'Product Architecture', 'BPM', 'CJM'],
-          data_skills:    ['Funnel Analysis', 'A/B Testing', 'Predictive Modeling', 'NLP & LLM'],
-          tools:         ['Jira', 'PostgreSQL', 'Firebase', 'GA4', 'Tableau', 'Postman'],
-          stack:         ['SQL', 'Python', 'Pandas', 'NumPy', 'TensorFlow'],
-          methodologies: ['Scrum', 'Kanban', 'Waterfall']
-        };
-          </code></pre>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <h3>Product</h3>
+              <ul>
+                <li>Product Strategy</li>
+                <li>Product Architecture</li>
+                <li>Business Process Management</li>
+                <li>CJM</li>
+              </ul>
+            </div>
+            <div class="skill-card">
+              <h3>Data</h3>
+              <ul>
+                <li>Funnel Analysis</li>
+                <li>A/B Testing</li>
+                <li>Predictive Modeling</li>
+                <li>NLP &amp; LLM</li>
+              </ul>
+            </div>
+            <div class="skill-card">
+              <h3>Tools</h3>
+              <ul>
+                <li>Jira</li>
+                <li>PostgreSQL</li>
+                <li>Firebase</li>
+                <li>GA4</li>
+                <li>Tableau</li>
+                <li>Postman</li>
+              </ul>
+            </div>
+            <div class="skill-card">
+              <h3>Stack</h3>
+              <ul>
+                <li>SQL</li>
+                <li>Python</li>
+                <li>Pandas</li>
+                <li>NumPy</li>
+                <li>TensorFlow</li>
+              </ul>
+            </div>
+            <div class="skill-card">
+              <h3>Methodologies</h3>
+              <ul>
+                <li>Scrum</li>
+                <li>Kanban</li>
+                <li>Waterfall</li>
+              </ul>
+            </div>
+          </div>
         </section>
 
         <!-- Experience -->
         <section class="section">
             <h2 class="section-title"><i class="fas fa-briefcase"></i> Work Experience</h2>
             
-                <div class="job-title">
-                    <span>Product Analyst (CJM project)</span>
-                    <span class="date">06/2022 - 11/2022</span>
+                <div class="job-item">
+                  <div class="job-header">
+                    <div class="job-info">
+                      <h3>Product Analyst (CJM project)</h3>
+                      <p class="job-company">DDL, Belgrade, Serbia</p>
+                    </div>
+                    <span class="job-date">06/2022 – 11/2022</span>
+                  </div>
+                  <ul class="job-details">
+                    <li>Conducted cross-platform funnel analysis to evaluate user behavior …</li>
+                    <li>Mapped the user journey and identified bottlenecks …</li>
+                    <li>Generated and validated data-driven product hypotheses …</li>
+                  </ul>
                 </div>
-                <div class="company">DDL, Belgrade, Serbia</div>
-                <div class="company-description">A product consulting boutique</div>
-                <ul class="responsibilities">
-                    <li>Conducted cross-platform funnel analysis to evaluate user behavior and optimize conversion across mobile and web</li>
-                    <li>Mapped the user journey and identified bottlenecks, highlighting friction points and UX improvement areas</li>
-                    <li>Generated and validated data-driven product hypotheses to support feature development and UX decisions</li>
-                </ul>
-            </div>
+
             
             <div class="experience-item">
                 <div class="job-title">
