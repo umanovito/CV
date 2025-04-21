@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vito Umano - Resume</title>
+    <title>Vito Umano - CV</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -13,7 +13,7 @@
         <div id="particles-js"></div>
         <div class="container header-content">
             <h1 class="name">Vito Umano</h1>
-            <p class="title">Data Science & Product Development Manager</p>
+            <p class="title">Product Analyst & Product Development Manager</p>
             <div class="contact">
                 <a href="mailto:umanovito@gmail.com"><i class="fas fa-envelope"></i> umanovito@gmail.com</a>
                 <a href="tel:+77059673579"><i class="fas fa-phone"></i> +7(705)967 35 79</a>
@@ -337,33 +337,6 @@
                 document.getElementById('proteinModal').style.display = 'flex';
             }
         }
-        
-        // For demo purposes, add a button to simulate creating quizzes
-        const createQuizBtn = document.createElement('button');
-        createQuizBtn.textContent = 'Симулировать создание квиза';
-        createQuizBtn.style.position = 'fixed';
-        createQuizBtn.style.bottom = '20px';
-        createQuizBtn.style.right = '20px';
-        createQuizBtn.style.zIndex = '1000';
-        createQuizBtn.style.padding = '10px';
-        createQuizBtn.style.backgroundColor = '#2196F3';
-        createQuizBtn.style.color = 'white';
-        createQuizBtn.style.border = 'none';
-        createQuizBtn.style.borderRadius = '5px';
-        createQuizBtn.style.cursor = 'pointer';
-        createQuizBtn.onclick = createQuiz;
-        document.body.appendChild(createQuizBtn);
-        
-        // Show protein modal immediately for testing
-        document.querySelector('.protein-no').addEventListener('click', function() {
-            document.getElementById('proteinModal').style.display = 'none';
-            document.getElementById('gifModal').style.display = 'flex';
-        });
-        
-        // Close gif modal when clicking anywhere
-        document.getElementById('gifModal').addEventListener('click', function() {
-            this.style.display = 'none';
-        });
     </script>
 </body>
 </html>
