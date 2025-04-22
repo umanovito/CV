@@ -32,24 +32,6 @@
                   <i class="fab fa-telegram"></i> umanovito
                 </a>
             </div>
-            <!-- Добавляем небольшой отступ -->
-            <br>
-            <!-- Download PDF Button настроенная на прямое скачивание -->
-            <a href="javascript:void(0)" onclick="downloadCV()" class="download-btn">
-                <i class="fas fa-file-download"></i> Download CV in PDF
-            </a>
-            
-            <script>
-                function downloadCV() {
-                    // Создаём ссылку на ваш PDF-файл
-                    var link = document.createElement('a');
-                    link.href = 'https://raw.githubusercontent.com/umanovito/CV/main/CV_Umano_Vito.pdf';
-                    link.download = 'CV_Umano_Vito.pdf';
-                    document.body.appendChild(link);
-                    link.click();
-                    document.body.removeChild(link);
-                }
-            </script>
         </div>
     </header>
 
@@ -219,6 +201,13 @@
                 </div>
                 <div class="school"><a href="https://eng.mipt.ru/" target="_blank" rel="noopener noreferrer">Moscow Institute of Physics and Technology</a>, Moscow, Russia</div>
             </div>
+            
+            <!-- Кнопка загрузки PDF на белом фоне -->
+            <div class="white-download-container">
+                <a href="javascript:void(0)" onclick="downloadCV()" class="download-btn-white">
+                    <i class="fas fa-file-download"></i> Download CV in PDF
+                </a>
+            </div>
         </section>
     </div>
 
@@ -226,12 +215,6 @@
     <footer class="footer">
         <div class="container">
             <p>&copy; 2025 Vito Umano. All rights reserved.</p>
-            <!-- Дублирующая кнопка скачивания в футере -->
-            <div class="footer-download">
-                <a href="javascript:void(0)" onclick="downloadCV()" class="download-btn-footer">
-                    <i class="fas fa-file-download"></i> Download CV in PDF
-                </a>
-            </div>
         </div>
     </footer>
 
@@ -373,6 +356,17 @@
                 behavior: 'smooth'
             });
         });
+
+        // Функция скачивания PDF
+        function downloadCV() {
+            // Создаём ссылку на ваш PDF-файл
+            var link = document.createElement('a');
+            link.href = 'https://raw.githubusercontent.com/umanovito/CV/main/CV_Umano_Vito.pdf';
+            link.download = 'CV_Umano_Vito.pdf';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
     </script>
 </body>
 </html>
