@@ -192,11 +192,14 @@ body {
     overflow: hidden;
 }
 
-.code-block::before {
-    content: "// Skills & Tools";
-    color: #6c757d;
-    display: block;
-    margin-bottom: 10px;
+.code-block {
+  background: #2d2d2d;
+  color: #f8f8f2;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  font-family: monospace;
+  white-space: pre; /* важно, чтобы сохранялись все отступы */
 }
 
 .code-line {
