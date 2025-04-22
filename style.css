@@ -128,7 +128,7 @@ body {
 .job-header {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
     margin-bottom: 10px;
 }
 
@@ -163,6 +163,7 @@ body {
     font-size: 1rem;
     color: var(--text-muted);
     white-space: nowrap;
+    text-align: right;
 }
 
 .responsibilities {
@@ -246,8 +247,12 @@ body {
 .back-to-top:hover {
     background-color: #1976D2;
 }
+
+/* Responsive */
+@media (max-width: 768px) {
     .contact {
         flex-direction: column;
+        align-items: center;
         gap: 10px;
     }
     
@@ -255,5 +260,9 @@ body {
         flex-direction: column;
         align-items: flex-start;
         gap: 5px;
+    }
+    
+    .date {
+        text-align: left;
     }
 }
