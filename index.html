@@ -69,6 +69,7 @@
                     <h3 class="job-title">Lead Product Analyst</h3>
                     <span class="date">12/2022 - 12/2024</span>
                 </div>
+                <a href="https://ht.kz/" target="_blank" rel="noopener noreferrer">
                 <div class="company">HT.KZ, Almaty, Kazakhstan</div>
                 <div class="company-description">TOP-1 tour agent in Kazakhstan</div>
                 <ul class="responsibilities">
@@ -131,6 +132,7 @@
                     <h3 class="job-title">Lead Business Analyst</h3>
                     <span class="date">10/2019 - 10/2020</span>
                 </div>
+                <a href="https://domrf.com/" target="_blank" rel="noopener noreferrer">
                 <div class="company">Bank Dom.rf, Moscow, Russia</div>
                 <div class="company-description">TOP-3 bank in mortgage and project financing in Russia</div>
                 <ul class="responsibilities">
@@ -149,6 +151,7 @@
                     <h3 class="job-title">Product Owner</h3>
                     <span class="date">04/2019 - 09/2019</span>
                 </div>
+                <a href="https://www.t1-consulting.ru/" target="_blank" rel="noopener noreferrer">
                 <div class="company">T1 Consulting (T1 group), Moscow, Russia</div>
                 <div class="company-description">TOP-10 Russian IT company specializes in product development and digital platform engineering</div>
                 <ul class="responsibilities">
@@ -166,7 +169,8 @@
                     <h3 class="job-title">Business analyst</h3>
                     <span class="date">04/2017 - 09/2018</span>
                 </div>
-                <div class="company">Tinkoff Bank, Moscow, Russia</div>
+                <a href="https://www.tbank.ru/" target="_blank" rel="noopener noreferrer">
+                <div class="company">TBank, Moscow, Russia</div>
                 <div class="company-description">TOP-3 largest bank in Russia, an online ecosystem of financial and lifestyle services for over <strong>40 million clients</strong></div>
                 <ul class="responsibilities">
                     <li>Designed and launched a <strong>new in-person credit card distribution process</strong> in malls and stores → Increased conversion to first purchase by <strong>30%</strong>, reduced time to receive a card from <strong>1 day to 20 minutes</strong></li>
@@ -179,7 +183,8 @@
                     <h3 class="job-title">BI Consultant</h3>
                     <span class="date">12/2015 - 10/2016</span>
                 </div>
-                <div class="company">GMSC, Moscow, Russia</div>
+                <a href="https://www.gmcs.ru/en/" target="_blank" rel="noopener noreferrer">
+                <div class="company">GMCS, Moscow, Russia</div>
                 <div class="company-description">An IT company specializes in business applications implementation and software development</div>
                 <ul class="responsibilities">
                     <li>Implemented <strong>budgeting systems</strong> for X5 Retail Group and Ammoni plant using IBM Cognos</li>
@@ -209,24 +214,6 @@
         </div>
     </footer>
 
-    <!-- Protein Modal -->
-    <div id="proteinModal" class="protein-modal">
-        <div class="protein-modal-content">
-            <h3>Уведомление</h3>
-            <p>Чтобы продолжить работу с админкой необходимо занести банку протеина к Вито</p>
-            <div class="protein-buttons">
-                <a href="https://ge.iherb.com/pr/optimum-nutrition-gold-standard-100-whey-double-rich-chocolate-5-lbs-2-27-kg/27509" target="_blank" class="protein-btn protein-yes">Да</a>
-                <button class="protein-btn protein-no">Нет</button>
-            </div>
-        </div>
-    </div>
-
-    <!-- Gif Modal -->
-    <div id="gifModal" class="gif-modal">
-        <div class="gif-content">
-            <img src="YOUR_GIF_URL_HERE" alt="Reaction GIF">
-        </div>
-    </div>
 
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
@@ -339,21 +326,5 @@
                 "retina_detect": true
             });
         });
-
-        // Protein Modal Functionality
-        // Track quiz count in localStorage
-        let quizCount = localStorage.getItem('quizCount') ? parseInt(localStorage.getItem('quizCount')) : 0;
-        
-        // Function to simulate creating a quiz
-        function createQuiz() {
-            quizCount++;
-            localStorage.setItem('quizCount', quizCount);
-            
-            // Check if we've reached 30 quizzes
-            if (quizCount === 30) {
-                document.getElementById('proteinModal').style.display = 'flex';
-            }
-        }
-    </script>
 </body>
 </html>
