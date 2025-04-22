@@ -3,9 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vito Umano - Resume</title>
+    <title>Vito Umano - CV</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css"
+    />
+    <!-- сам скрипт highlight.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+    <!-- авто‑инициализация подсветки -->
+    <script>hljs.highlightAll();</script>
 </head>
 <body>
     <!-- Header -->
@@ -13,10 +21,13 @@
         <div id="particles-js"></div>
         <div class="container header-content">
             <h1 class="name">Vito Umano</h1>
-            <p class="title">Data Science & Product Development Manager</p>
+            <p class="title">Product Analyst & Product Development Manager</p>
             <div class="contact">
                 <a href="mailto:umanovito@gmail.com"><i class="fas fa-envelope"></i> umanovito@gmail.com</a>
-                <a href="tel:+77059673579"><i class="fas fa-phone"></i> +7(705)967 35 79</a>
+                <a href="tel:+995555598691"><i class="fas fa-phone"></i> +995-555-59-86-91</a>
+                <a href="https://t.me/umanovito" target="_blank" rel="noopener noreferrer">
+                  <i class="fab fa-telegram"></i> umanovito
+                    </a>
             </div>
         </div>
     </header>
@@ -26,23 +37,28 @@
         <!-- Professional Summary -->
         <section class="section">
             <h2 class="section-title"><i class="fas fa-user-tie"></i> Professional Summary</h2>
-            <p>Software product development manager with <span class="highlight">10 years</span> of experience in IT. Built data management systems that informed key product decisions and contributed to a <span class="highlight">30% conversion increase</span> in the mobile app. Hired and managed a team, organized workflows, and developed an HR document management system TechHR (SaaS). Developed a BPM system for the project finance process, which reduced the processing time of the lending process by <span class="highlight">10 times</span>. Launched and maintained banks' co-brand products (debit&credit cards) used by over <span class="highlight">500,000 customers</span>.</p>
+            <p>Software product development manager with 10 years of experience in IT. Built data management systems that informed key product decisions and contributed to a 30% conversion increase in the mobile app. Hired and managed a team, organized workflows, and developed an HR document management system TechHR (SaaS). Developed a BPM system for the project finance process, which reduced the processing time of the lending process by 10 times. Launched and maintained banks' co-brand products (debit&credit cards) used by over 500,000 customers.</p>
         </section>
 
         <!-- Skills -->
         <section class="section">
             <h2 class="section-title"><i class="fas fa-code"></i> Skills & Tools</h2>
-            
-            <div class="code-block">
-                <span class="code-line"><span class="code-keyword">const</span> <span class="code-function">skills</span> = {</span>
-                <span class="code-line">  <span class="code-string">productSkills</span>: [<span class="code-string">'Product Strategy'</span>, <span class="code-string">'Product Architecture'</span>, <span class="code-string">'Business Process Management'</span>, <span class="code-string">'CJM'</span>],</span>
-                <span class="code-line">  <span class="code-string">dataSkills</span>: [<span class="code-string">'Funnel Analysis'</span>, <span class="code-string">'A/B Testing'</span>, <span class="code-string">'Predictive Modeling'</span>, <span class="code-string">'NLP & LLM'</span>],</span>
-                <span class="code-line">  <span class="code-string">tools</span>: [<span class="code-string">'Jira'</span>, <span class="code-string">'PostgreSQL'</span>, <span class="code-string">'Firebase'</span>, <span class="code-string">'GA4'</span>, <span class="code-string">'Tableau'</span>, <span class="code-string">'Postman'</span>],</span>
-                <span class="code-line">  <span class="code-string">stack</span>: [<span class="code-string">'SQL'</span>, <span class="code-string">'Python'</span>, <span class="code-string">'Pandas'</span>, <span class="code-string">'NumPy'</span>, <span class="code-string">'TensorFlow'</span>],</span>
-                <span class="code-line">  <span class="code-string">methodologies</span>: [<span class="code-string">'Scrum'</span>, <span class="code-string">'Kanban'</span>, <span class="code-string">'Waterfall'</span>]</span>
-                <span class="code-line">};</span>
-            </div>
+        
+            <pre><code class="language-javascript">
+        skills = {
+            'domain': {
+                'product': ['Product Strategy', 'Product Architecture', 'Business Process Management', 'CJM'],
+                'data':    ['Funnel Analysis', 'A/B Testing', 'Predictive Modeling', 'NLP & LLM'],
+            },
+            'technology': {
+                'tools': ['Jira', 'PostgreSQL', 'Firebase', 'GA4', 'Tableau', 'Postman'],
+                'langs': ['SQL', 'Python', 'pandas', 'numpy', 'TensorFlow'],
+            },
+            'methodologies': ['Scrum', 'Kanban', 'Waterfall'],
+        }
+            </code></pre>
         </section>
+
 
         <!-- Experience -->
         <section class="section">
@@ -53,7 +69,7 @@
                     <h3 class="job-title">Lead Product Analyst</h3>
                     <span class="date">12/2022 - 12/2024</span>
                 </div>
-                <div class="company">HT.KZ, Almaty, Kazakhstan</div>
+                <div class="company"><a href="https://ht.kz/" target="_blank" rel="noopener noreferrer">HT.KZ</a>, Almaty, Kazakhstan</div>
                 <div class="company-description">TOP-1 tour agent in Kazakhstan</div>
                 <ul class="responsibilities">
                     <li>Increased mobile app sales conversion by <strong>30%</strong> through funnel analysis, identifying bottlenecks and testing hypotheses on historical data</li>
@@ -115,7 +131,7 @@
                     <h3 class="job-title">Lead Business Analyst</h3>
                     <span class="date">10/2019 - 10/2020</span>
                 </div>
-                <div class="company">Bank Dom.rf, Moscow, Russia</div>
+                <div class="company"><a href="https://domrf.com/" target="_blank" rel="noopener noreferrer">Bank Dom.rf</a>, Moscow, Russia</div>
                 <div class="company-description">TOP-3 bank in mortgage and project financing in Russia</div>
                 <ul class="responsibilities">
                     <li>Led the <strong>digital transformation</strong> of the project financing process, increasing application processing speed by <strong>3×</strong></li>
@@ -133,7 +149,7 @@
                     <h3 class="job-title">Product Owner</h3>
                     <span class="date">04/2019 - 09/2019</span>
                 </div>
-                <div class="company">T1 Consulting (T1 group), Moscow, Russia</div>
+                <div class="company"><a href="https://www.t1-consulting.ru/" target="_blank" rel="noopener noreferrer">T1 Consulting (T1 group)</a>, Moscow, Russia</div>
                 <div class="company-description">TOP-10 Russian IT company specializes in product development and digital platform engineering</div>
                 <ul class="responsibilities">
                     <li>Initiated and led the development of an <strong>internal MVP</strong>: a performance monitoring system for IT infrastructure and employee activity tracking</li>
@@ -150,7 +166,7 @@
                     <h3 class="job-title">Business analyst</h3>
                     <span class="date">04/2017 - 09/2018</span>
                 </div>
-                <div class="company">Tinkoff Bank, Moscow, Russia</div>
+                <div class="company"><a href="https://www.tbank.ru/" target="_blank" rel="noopener noreferrer">TBank</a>, Moscow, Russia</div>
                 <div class="company-description">TOP-3 largest bank in Russia, an online ecosystem of financial and lifestyle services for over <strong>40 million clients</strong></div>
                 <ul class="responsibilities">
                     <li>Designed and launched a <strong>new in-person credit card distribution process</strong> in malls and stores → Increased conversion to first purchase by <strong>30%</strong>, reduced time to receive a card from <strong>1 day to 20 minutes</strong></li>
@@ -163,7 +179,7 @@
                     <h3 class="job-title">BI Consultant</h3>
                     <span class="date">12/2015 - 10/2016</span>
                 </div>
-                <div class="company">GMSC, Moscow, Russia</div>
+                <div class="company"><a href="https://www.gmcs.ru/en/" target="_blank" rel="noopener noreferrer">GMCS</a>, Moscow, Russia</div>
                 <div class="company-description">An IT company specializes in business applications implementation and software development</div>
                 <ul class="responsibilities">
                     <li>Implemented <strong>budgeting systems</strong> for X5 Retail Group and Ammoni plant using IBM Cognos</li>
@@ -180,7 +196,7 @@
                     <h3 class="job-title">BS&MS, Applied Math and Physics</h3>
                     <span class="date">09/2008 - 08/2014</span>
                 </div>
-                <div class="school">Moscow Institute of Physics and Technology, Moscow, Russia</div>
+                <div class="school"><a href="https://eng.mipt.ru/" target="_blank" rel="noopener noreferrer">Moscow Institute of Physics and Technology</a>, Moscow, Russia</div>
             </div>
         </section>
     </div>
