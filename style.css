@@ -159,7 +159,7 @@ body {
 }
 
 .date {
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: var(--text-muted);
     white-space: nowrap;
 }
@@ -216,8 +216,35 @@ body {
     font-size: 0.9rem;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
+/* Кнопка вверх */
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.back-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.back-to-top:hover {
+    background-color: #1976D2;
+}
     .contact {
         flex-direction: column;
         gap: 10px;
