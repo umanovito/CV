@@ -64,15 +64,39 @@ body {
     margin: 0 0 15px;
 }
 
-/* Контакты по центру */
+/* Контакты в одну строку и по центру */
 .contact {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap; /* Предотвращает перенос на новую строку */
     width: 100%;
-    margin: 0 auto;
+    margin: 0 auto 15px;
+}
+
+/* Кнопка скачать PDF */
+.download-btn {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    margin-top: 10px;
+}
+
+.download-btn:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.download-btn i {
+    margin-right: 8px;
 }
 
 .contact a {
@@ -81,6 +105,7 @@ body {
     display: flex;
     align-items: center;
     gap: 5px;
+    white-space: nowrap; /* Предотвращает разрыв внутри ссылки */
 }
 
 .contact a:hover {
@@ -129,11 +154,11 @@ body {
     margin-bottom: 0;
 }
 
-/* Даты справа и заголовки */
+/* Даты справа и заголовки - улучшенное выравнивание */
 .job-header {
     display: flex;
     justify-content: space-between;
-    align-items: center !important; /* Принудительное выравнивание по центру */
+    align-items: center;
     margin-bottom: 10px;
     width: 100%;
 }
@@ -142,15 +167,14 @@ body {
     font-size: 1.3rem;
     color: var(--secondary-color);
     margin: 0;
-    flex: 1; /* Занимает доступное пространство */
 }
 
 .date {
     font-size: 1rem;
     color: var(--text-muted);
     white-space: nowrap;
-    text-align: right !important; /* Принудительное выравнивание справа */
-    padding-left: 15px; /* Немного отступа от заголовка */
+    text-align: right;
+    padding-left: 15px;
 }
 
 .company {
@@ -185,7 +209,7 @@ body {
 
 .responsibilities strong {
     font-weight: bold;
-    color: inherit; /* Черный цвет для жирного текста */
+    color: inherit;
 }
 
 /* Education */
@@ -214,7 +238,7 @@ body {
   border-radius: 0.5rem;
   overflow-x: auto;
   font-family: monospace;
-  white-space: pre; /* важно, чтобы сохранялись все отступы */
+  white-space: pre;
 }
 
 /* Footer */
@@ -259,19 +283,36 @@ body {
 /* Responsive */
 @media (max-width: 768px) {
     .contact {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row; /* Сохраняем строчный вид */
+        flex-wrap: wrap; /* Разрешаем перенос на маленьких экранах */
+        justify-content: center;
         gap: 10px;
     }
     
     .job-header {
-        flex-direction: column;
-        align-items: flex-start !important;
-        gap: 5px;
+        flex-direction: row; /* Сохраняем в строку даже на маленьких экранах */
+        align-items: center;
     }
     
-    .date {
-        text-align: left !important;
-        padding-left: 0;
+    .download-btn {
+        padding: 6px 12px;
+        font-size: 0.9rem;
+    }
+    
+    /* Для совсем маленьких экранов можно добавить дополнительную точку останова */
+    @media (max-width: 480px) {
+        .job-header {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        
+        .date {
+            text-align: left;
+            padding-left: 0;
+        }
+        
+        .contact {
+            flex-direction: column;
+        }
     }
 }
