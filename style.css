@@ -198,42 +198,13 @@ body {
 
 /* Code-like elements */
 .code-block {
-    background-color: var(--dark-bg);
-    color: #f8f9fa;
-    padding: 15px;
-    border-radius: 5px;
-    font-family: 'Courier New', Courier, monospace;
-    margin: 20px 0;
-    position: relative;
-    overflow: hidden;
-}
-
-.code-block::before {
-    content: "// Skills & Tools";
-    color: #6c757d;
-    display: block;
-    margin-bottom: 10px;
-}
-
-.code-line {
-    display: block;
-    margin-bottom: 5px;
-}
-
-.code-comment {
-    color: #6c757d;
-}
-
-.code-keyword {
-    color: #f1c40f;
-}
-
-.code-string {
-    color: #2ecc71;
-}
-
-.code-function {
-    color: #3498db;
+  background: #2d2d2d;
+  color: #f8f8f2;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  font-family: monospace;
+  white-space: pre; /* важно, чтобы сохранялись все отступы */
 }
 
 /* Footer */
