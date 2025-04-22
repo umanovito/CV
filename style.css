@@ -64,11 +64,15 @@ body {
     margin: 0 0 15px;
 }
 
+/* Контакты по центру */
 .contact {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 20px;
     flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .contact a {
@@ -125,17 +129,28 @@ body {
     margin-bottom: 0;
 }
 
+/* Даты справа и заголовки */
 .job-header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center !important; /* Принудительное выравнивание по центру */
     margin-bottom: 10px;
+    width: 100%;
 }
 
 .job-title {
     font-size: 1.3rem;
     color: var(--secondary-color);
     margin: 0;
+    flex: 1; /* Занимает доступное пространство */
+}
+
+.date {
+    font-size: 1rem;
+    color: var(--text-muted);
+    white-space: nowrap;
+    text-align: right !important; /* Принудительное выравнивание справа */
+    padding-left: 15px; /* Немного отступа от заголовка */
 }
 
 .company {
@@ -157,13 +172,6 @@ body {
     font-size: 0.9rem;
     color: var(--text-muted);
     margin-bottom: 12px;
-}
-
-.date {
-    font-size: 1rem;
-    color: var(--text-muted);
-    white-space: nowrap;
-    text-align: right;
 }
 
 .responsibilities {
@@ -258,11 +266,12 @@ body {
     
     .job-header {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: flex-start !important;
         gap: 5px;
     }
     
     .date {
-        text-align: left;
+        text-align: left !important;
+        padding-left: 0;
     }
 }
