@@ -25,6 +25,9 @@
             <div class="contact">
                 <a href="mailto:umanovito@gmail.com"><i class="fas fa-envelope"></i> umanovito@gmail.com</a>
                 <a href="tel:+995555598691"><i class="fas fa-phone"></i> +995-555-59-86-91</a>
+                <a href="https://wa.me/77059673579" target="_blank" rel="noopener noreferrer">
+                  <i class="fab fa-whatsapp"></i> +7-705-967-35-79
+                </a>
                 <a href="https://t.me/umanovito" target="_blank" rel="noopener noreferrer">
                   <i class="fab fa-telegram"></i> umanovito
                 </a>
@@ -41,7 +44,7 @@
                     // Создаём ссылку на ваш PDF-файл
                     var link = document.createElement('a');
                     link.href = 'https://raw.githubusercontent.com/umanovito/CV/main/CV_Umano_Vito.pdf';
-                    link.download = 'Umano_Vito_CV.pdf';
+                    link.download = 'CV_Umano_Vito.pdf';
                     document.body.appendChild(link);
                     link.click();
                     document.body.removeChild(link);
@@ -223,6 +226,12 @@
     <footer class="footer">
         <div class="container">
             <p>&copy; 2025 Vito Umano. All rights reserved.</p>
+            <!-- Дублирующая кнопка скачивания в футере -->
+            <div class="footer-download">
+                <a href="javascript:void(0)" onclick="downloadCV()" class="download-btn-footer">
+                    <i class="fas fa-file-download"></i> Download CV in PDF
+                </a>
+            </div>
         </div>
     </footer>
 
