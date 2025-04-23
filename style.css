@@ -76,7 +76,7 @@ body {
     margin-bottom: 20px; /* Увеличиваем отступ снизу */
 }
 
-/* Кнопка скачать PDF */
+/* Кнопка скачать PDF в шапке */
 .download-btn {
     display: inline-block;
     background-color: rgba(255, 255, 255, 0.2);
@@ -87,16 +87,46 @@ body {
     font-weight: 500;
     transition: all 0.3s ease;
     border: 1px solid rgba(255, 255, 255, 0.4);
-    margin-top: 5px; /* Уменьшаем верхний отступ */
+    margin-top: 5px;
 }
 
 .download-btn:hover {
     background-color: rgba(255, 255, 255, 0.3);
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: white;
 }
 
 .download-btn i {
+    margin-right: 8px;
+}
+
+/* Стили для кнопки скачивания на белом фоне */
+.white-download-container {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.download-btn-white {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.download-btn-white:hover {
+    background-color: #1976D2;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+.download-btn-white i {
     margin-right: 8px;
 }
 
@@ -251,30 +281,6 @@ body {
     font-size: 0.9rem;
 }
 
-.footer-download {
-    margin-top: 15px;
-}
-
-.download-btn-footer {
-    display: inline-block;
-    background-color: rgba(255, 255, 255, 0.15);
-    color: white;
-    padding: 8px 16px;
-    border-radius: 4px;
-    text-decoration: none;
-    font-weight: 500;
-    transition: all 0.3s ease;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    margin-top: 5px;
-}
-
-.download-btn-footer:hover {
-    background-color: rgba(255, 255, 255, 0.25);
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    color: white;
-}
-
 /* Кнопка вверх */
 .back-to-top {
     position: fixed;
@@ -318,26 +324,3 @@ body {
         flex-direction: row; /* Сохраняем в строку даже на маленьких экранах */
         align-items: center;
     }
-    
-    .download-btn {
-        padding: 6px 12px;
-        font-size: 0.9rem;
-    }
-    
-    /* Для совсем маленьких экранов можно добавить дополнительную точку останова */
-    @media (max-width: 480px) {
-        .job-header {
-            flex-direction: column;
-            align-items: flex-start;
-        }
-        
-        .date {
-            text-align: left;
-            padding-left: 0;
-        }
-        
-        .contact {
-            flex-direction: column;
-        }
-    }
-}
