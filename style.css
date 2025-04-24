@@ -272,6 +272,7 @@ body {
   white-space: pre;
 }
 
+/* Стили для навыков в JSON формате */
 .skills-json {
   font-family: 'Consolas', 'Monaco', monospace;
   background-color: #282c34;
@@ -302,19 +303,71 @@ body {
   display: inline-block;
 }
 
-/* Адаптивность для мобильных устройств */
+/* Footer */
+.footer {
+    background-color: var(--dark-bg);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/* Кнопка вверх */
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.back-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.back-to-top:hover {
+    background-color: #1976D2;
+}
+
+/* Responsive */
 @media (max-width: 768px) {
-  .skills-json {
-    font-size: 14px;
-    padding: 15px;
-  }
-  
-  .json-indent {
-    padding-left: 16px;
-  }
-  
-  .skill-tag {
-    padding: 2px 6px;
-    margin: 2px 4px 2px 0;
-  }
+    .contact {
+        flex-direction: row; /* Сохраняем строчный вид */
+        flex-wrap: wrap; /* Разрешаем перенос на маленьких экранах */
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .job-header {
+        flex-direction: row; /* Сохраняем в строку даже на маленьких экранах */
+        align-items: center;
+    }
+    
+    /* Mobile responsive adjustments for skills section */
+    .skills-json {
+        font-size: 14px;
+        padding: 15px;
+    }
+    
+    .json-indent {
+        padding-left: 16px;
+    }
+    
+    .skill-tag {
+        padding: 2px 6px;
+        margin: 2px 4px 2px 0;
+    }
 }
