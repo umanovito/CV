@@ -272,7 +272,7 @@ body {
   white-space: pre;
 }
 
-/* Стили для блока навыков - более чистый вариант */
+/* Стили для блока навыков - финальный вариант */
 .skills-code {
   font-family: 'Consolas', 'Monaco', monospace;
   background-color: #282c34;
@@ -282,6 +282,19 @@ body {
   line-height: 1.6;
   font-size: 16px;
   overflow: hidden;
+}
+
+/* Цветовая подсветка синтаксиса */
+.code-var {
+  color: #e6db74; /* желтый для переменных */
+}
+
+.code-string {
+  color: #f92672; /* розовый для строк */
+}
+
+.code-bracket {
+  color: #66d9ef; /* голубой для скобок */
 }
 
 /* Базовая строка кода */
