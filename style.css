@@ -11,22 +11,61 @@
 
 /* Responsive */
 @media (max-width: 768px) {
-    .contact {
-        flex-direction: row; /* Сохраняем строчный вид */
-        flex-wrap: wrap; /* Разрешаем перенос на маленьких экранах */
-        justify-content: center;
-        gap: 10px;
+    /* Container and sections padding */
+    .container {
+        padding: 0 15px;
     }
     
-    .job-header {
-        flex-direction: row; /* Сохраняем в строку даже на маленьких экранах */
+    .section {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    
+    /* Contact section */
+    .contact {
+        flex-direction: column; /* Stack contacts vertically */
         align-items: center;
+        gap: 12px; /* Increased gap between contacts */
+        padding: 0 10px; /* Add side padding */
+        max-width: 100%; /* Ensure it doesn't overflow */
+    }
+    
+    /* Style for contact links */
+    .contact a {
+        font-size: 0.9rem; /* Slightly smaller font */
+        padding: 5px 10px; /* Add some padding to make tap targets bigger */
+        background-color: rgba(255, 255, 255, 0.1); /* Subtle background */
+        border-radius: 4px; /* Rounded corners */
+        width: 100%; /* Take full width of the column */
+        justify-content: center; /* Center the contents */
+    }
+    
+    /* Job headers */
+    .job-header {
+        flex-direction: column; /* Stack title and date */
+        align-items: flex-start; /* Align to the left */
+        gap: 5px;
+    }
+    
+    .date {
+        padding-left: 0; /* Remove left padding */
+        font-size: 0.9rem; /* Slightly smaller font */
+    }
+    
+    /* Responsibilities */
+    .responsibilities {
+        padding-left: 25px; /* Increase indent for list items */
+    }
+    
+    .responsibilities li {
+        margin-bottom: 12px; /* More space between list items */
     }
     
     /* Mobile responsive adjustments for skills section */
     .skills-code {
         font-size: 14px;
         padding: 14px;
+        overflow-x: auto; /* Enable horizontal scrolling if needed */
     }
     
     .indent-1 {
@@ -43,7 +82,7 @@
     
     .skill-pill {
         padding: 3px 8px;
-        margin: 0 4px 4px 0;
+        margin: 0 4px 6px 0; /* Increased bottom margin */
         /* Same colors as desktop */
         background-color: rgba(166, 226, 46, 0.15);
         color: #a6e22e;
