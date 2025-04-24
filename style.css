@@ -25,7 +25,7 @@
     .contact {
         flex-direction: column; /* Stack contacts vertically */
         align-items: center;
-        gap: 12px; /* Increased gap between contacts */
+        gap: 8px; /* Reduced gap between contacts */
         padding: 0 10px; /* Add side padding */
         max-width: 100%; /* Ensure it doesn't overflow */
     }
@@ -33,10 +33,8 @@
     /* Style for contact links */
     .contact a {
         font-size: 0.9rem; /* Slightly smaller font */
-        padding: 5px 10px; /* Add some padding to make tap targets bigger */
-        background-color: rgba(255, 255, 255, 0.1); /* Subtle background */
-        border-radius: 4px; /* Rounded corners */
-        width: 100%; /* Take full width of the column */
+        padding: 2px 0; /* Minimal padding to keep compact */
+        width: auto; /* Auto width */
         justify-content: center; /* Center the contents */
     }
     
