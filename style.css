@@ -272,16 +272,49 @@ body {
   white-space: pre;
 }
 
-/* Skills Container - Mobile Responsive */
-.skills-container {
+.skills-json {
   font-family: 'Consolas', 'Monaco', monospace;
   background-color: #282c34;
   color: #f8f8f2;
   border-radius: 6px;
-  padding: 16px;
-  width: 100%;
-  overflow: hidden;
-  line-height: 1.5;
+  padding: 20px;
+  line-height: 1.6;
+  font-size: 16px;
+  white-space: normal;
 }
 
-.
+.json-indent {
+  padding-left: 24px;
+}
+
+.skills-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 4px 0;
+}
+
+.skill-tag {
+  background: rgba(166, 226, 46, 0.1);
+  color: #a6e22e;
+  padding: 3px 8px;
+  margin: 2px 6px 2px 0;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+  .skills-json {
+    font-size: 14px;
+    padding: 15px;
+  }
+  
+  .json-indent {
+    padding-left: 16px;
+  }
+  
+  .skill-tag {
+    padding: 2px 6px;
+    margin: 2px 4px 2px 0;
+  }
+}
