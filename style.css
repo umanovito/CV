@@ -9,6 +9,47 @@
     --dark-bg: #343a40;
 }
 
+/* Responsive */
+@media (max-width: 768px) {
+    .contact {
+        flex-direction: row; /* Сохраняем строчный вид */
+        flex-wrap: wrap; /* Разрешаем перенос на маленьких экранах */
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .job-header {
+        flex-direction: row; /* Сохраняем в строку даже на маленьких экранах */
+        align-items: center;
+    }
+    
+    /* Mobile responsive adjustments for skills section */
+    .skills-code {
+        font-size: 14px;
+        padding: 14px;
+    }
+    
+    .indent-1 {
+        padding-left: 16px;
+    }
+    
+    .indent-2 {
+        padding-left: 32px;
+    }
+    
+    .indent-3 {
+        padding-left: 48px;
+    }
+    
+    .skill-pill {
+        padding: 3px 8px;
+        margin: 0 4px 4px 0;
+        /* Same colors as desktop */
+        background-color: rgba(166, 226, 46, 0.15);
+        color: #a6e22e;
+    }
+}
+
 /* Базовые стили */
 * {
     box-sizing: border-box;
@@ -272,140 +313,65 @@ body {
   white-space: pre;
 }
 
-/* Стили для блока навыков - финальный вариант */
+/* Обновленный блок для навыков */
+/* Styling for skills section with space-based indentation */
 .skills-code {
   font-family: 'Consolas', 'Monaco', monospace;
   background-color: #282c34;
   color: #f8f8f2;
   border-radius: 6px;
-  padding: 20px;
-  line-height: 1.6;
+  padding: 16px;
+  line-height: 1.3;
   font-size: 16px;
   overflow: hidden;
 }
 
-/* Цветовая подсветка синтаксиса */
+/* Color scheme */
 .code-var {
-  color: #e6db74; /* желтый для переменных */
+  color: #e6db74; /* yellow for variables */
 }
 
 .code-string {
-  color: #f92672; /* розовый для строк */
+  color: #66d9ef; /* soft blue for strings */
 }
 
 .code-bracket {
-  color: #66d9ef; /* голубой для скобок */
+  color: #a6e22e; /* light green for brackets */
 }
 
-/* Базовая строка кода */
+/* Base code line with reduced spacing */
 .code-line {
   white-space: nowrap;
+  margin: 1px 0;
 }
 
-/* Отступы - имитация структуры кода */
+/* Adjusted indents - compact spacing */
 .indent-1 {
-  padding-left: 20px;
+  padding-left: 18px;
 }
 
 .indent-2 {
-  padding-left: 40px;
+  padding-left: 36px;
 }
 
 .indent-3 {
-  padding-left: 60px;
+  padding-left: 54px;
 }
 
-/* Строка навыков */
+/* Skills row with tight spacing */
 .skills-row {
   display: flex;
   flex-wrap: wrap;
-  margin: 8px 0;
+  margin: 2px 0 4px 0;
 }
 
-/* Таблетка навыка */
+/* Skill pill */
 .skill-pill {
-  background-color: rgba(166, 226, 46, 0.15);
-  color: #a6e22e;
+  background-color: rgba(166, 226, 46, 0.15); /* Light green background */
+  color: #a6e22e; /* Light green text */
   padding: 4px 10px;
-  margin: 0 6px 6px 0;
+  margin: 0 5px 5px 0;
   border-radius: 4px;
   display: inline-block;
   font-size: 15px;
-}
-
-/* Footer */
-.footer {
-    background-color: var(--dark-bg);
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-    font-size: 0.9rem;
-}
-
-/* Кнопка вверх */
-.back-to-top {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: var(--primary-color);
-    color: white;
-    text-align: center;
-    line-height: 50px;
-    font-size: 20px;
-    cursor: pointer;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s, visibility 0.3s;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-    z-index: 1000;
-}
-
-.back-to-top.visible {
-    opacity: 1;
-    visibility: visible;
-}
-
-.back-to-top:hover {
-    background-color: #1976D2;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .contact {
-        flex-direction: row; /* Сохраняем строчный вид */
-        flex-wrap: wrap; /* Разрешаем перенос на маленьких экранах */
-        justify-content: center;
-        gap: 10px;
-    }
-    
-    .job-header {
-        flex-direction: row; /* Сохраняем в строку даже на маленьких экранах */
-        align-items: center;
-    }
-    
-    /* Mobile responsive adjustments for skills section */
-    .skills-code {
-        font-size: 14px;
-        padding: 15px;
-    }
-    
-    .indent-1 {
-        padding-left: 16px;
-    }
-    
-    .indent-2 {
-        padding-left: 32px;
-    }
-    
-    .indent-3 {
-        padding-left: 48px;
-    }
-    
-    .skill-pill {
-        padding: 3px 8px;
-        margin: 0 4px 4px 0;
-    }
 }
